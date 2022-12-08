@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <h2>DASHBOARD</h2>
+    <link href="style.css" rel='stylesheet'
+</head>
+
+<body>
+<div class="sidebar">
+    <div class=" logo">
+        <span class="logo_name">Logo</span> 
+    </div>
+    <ul class =" nav-links">
+        <li>
+            <a href="#">
+             <i class=""></i>
+             <span class="dashboard">Dashboard</span>
+            </a> 
+         </li>
+        <li>
+           <a href="campus.html">
+            <i class=""></i>
+            <span class="Campus">Campus</span>
+           </a> 
+        </li>
+
+        <li>
+            <a href="fee.html">
+             <i class=""></i>
+             <span class="fee">Fee Structure</span>
+            </a> 
+         </li>
+
+        <li>
+            
+            <a href="people.html">
+             <i class=""></i>
+             <span class="people">People</span>
+            </a> 
+         </li>
+        <li>
+            
+            <a href="#">
+             <i class=""></i>
+             <span class="accomodation">Accomodation</span>
+            </a> 
+         </li>
+         <li>
+            <a href="#">
+             <i class=""></i>
+             <span class="Transport">Transport facilities</span>
+            </a> 
+         </li>
+         <li>
+            <a href="#">
+             <i class=""></i>
+             <span class="faq">FAQS</span>
+            </a> 
+         </li>
+
+    </ul>
+</div>
+
+<section class="home-section">
+<nav>
+<div class="home-content">
+    
+    </div>
+  </div>
+</section>
+<script>
+    let sidebar = document.querySelector(".sidebar");
+ let sidebarBtn = document.querySelector(".sidebarBtn");
+ sidebarBtn.onclick = function() {
+   sidebar.classList.toggle("active");
+   if(sidebar.classList.contains("active")){
+   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+ }else
+   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+ }
+  </script>
+  </body>
